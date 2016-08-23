@@ -15,6 +15,15 @@
   // Aus dem PHP Manual kopiert.
   $obj = json_decode($json);
   $ausgabe = $obj->country;
+
+  // kuemmert sich darum, dass das Formular auch nach dem absenden anzeigt was eingegeben wurde.
+  $placeholder = "www.blick.ch";
+  if( empty($_POST) ) {
+    // tut nix
+  } else {
+    // ueberschreibt placeholder
+    $placeholder = $domain;
+  }
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +52,7 @@
 
     <form class="form-inline" action="index.php" method="post">
       <div class="form-group">
-      <input class="form-control" id="eingabe" name="eingabe" placeholder="www.blick.ch">
+      <input class="form-control" id="eingabe" name="eingabe" placeholder="<?php echo $placeholder ?>">
       </div>
       <button type="submit" class="btn btn-default"><i class="fa fa-paper-plane"></i> Website Testen</button>
     </form>
