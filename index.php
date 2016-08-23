@@ -88,5 +88,24 @@
 
   <!-- Bootstrap JS -->
   <script src="js/bootstrap.js"></script>
+
+
+  <!-- Piwik Tracking
+  Die letzen Bytes der IP-Adresse wird vor dem Speichern entfernt / Anonymisiert
+  -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//stat.ueberwacht.ch/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//stat.ueberwacht.ch/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
 </body>
 </html>
