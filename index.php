@@ -56,7 +56,8 @@
     <div class="page-header">
       <h1>Prüfe, ob Du beim Besuch Deiner Lieblingswebsite überwacht wirst</h1>
     </div>
-    <p>Die sogenannte Kabelaufklärung ermöglicht es, dem Nachrichtendienst grenzüberschreitende Kommunikation zu überwachen. Die Befürworter behaupten, dass Schweizer somit nicht von der Massenüberwachung betroffen seien. <a href="https://www.nachrichtendienstgesetz.com/">Doch das stimmt nicht ganz</a>: Die meisten (vielleicht sogar alle) Deiner Lieblingswebsites werden im Ausland gehostet. Nachfolgend kannst Du prüfen, ob das stimmt.</p>
+    <p>Am 25. September 2016 dürfen wir über das neue Nachrichtendienst (kurz NDG) abstimmen. Mit dem neuen Gesetzt wird die sogenannte Kabelaufklärung eingeführt.</p>
+    <p><b>Die Kabelaufklärung ermöglicht dem Nachrichtendienst, grenzüberschreitende Kommunikation zu überwachen.</b> Es reicht, wenn ein Teilnehmer der Verbindung (also meistens der Server) im Ausland steht und das ist fast immer der Fall. <b>Die meisten (vielleicht sogar alle) Deiner Lieblingswebsites werden im Ausland gehostet.</b> Nachfolgend kannst Du prüfen, ob das stimmt.</p>
 
     <hr>
 
