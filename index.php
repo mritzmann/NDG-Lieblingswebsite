@@ -86,7 +86,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="text-muted"><a href="https://github.com/mritzmann/NDG-traffic-surveillance"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> | Ein Projekt von <a href="https://twitter.com/RitzmannMarkus">@RitzmannMarkus</a>, inspiriert von <a href="https://twitter.com/schulerswiss/status/767699766763462656">@schulerswiss</a></p>
+      <p class="text-muted"><a href="https://github.com/mritzmann/NDG-Lieblingswebsite"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> | Ein Projekt von <a href="https://twitter.com/RitzmannMarkus">@RitzmannMarkus</a>, inspiriert von <a href="https://twitter.com/schulerswiss/status/767699766763462656">@schulerswiss</a></p>
     </div>
   </footer>
 
