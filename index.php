@@ -45,16 +45,22 @@
       <div class="form-group">
       <input class="form-control" id="eingabe" name="eingabe" placeholder="www.blick.ch">
       </div>
-      <button type="submit" class="btn btn-default">Testen</button>
+      <button type="submit" class="btn btn-default"><i class="fa fa-paper-plane"></i> Website Testen</button>
     </form>
 
     <hr>
 
     <?php
-    if ($ausgabe == 'Switzerland') {
-        echo "<div class=\"panel panel-warning\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Glückwunsch, du wirst nicht überwacht!</h3> </div> <div class=\"panel-body\">Naja, zumindest nicht ganz. Die Webseite $domain wird in $ausgabe gehostet. Der Nachrichtendienst kann den Inhalt der Kommunikation nicht mitschneiden. Du hinterlässt jedoch Büpf sei dank diverse Metadaten.</div> </div>";
+    if( empty($ausgabe) ) {
+      // tut nix
     } else {
-        echo "<div class=\"panel panel-danger\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Du wirst überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite $domain wird in $ausgabe gehostet. Beim aufrufen von $domain findet Grenzüberschreitende Kommunikation statt. Dabei wirst du überwacht!</div> </div>";
+
+      if ($ausgabe == 'Switzerland') {
+          echo "<div class=\"panel panel-warning\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Glückwunsch, du wirst nicht überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite $domain wird in $ausgabe gehostet. Der Nachrichtendienst kann den Inhalt der Kommunikation nicht mitschneiden. Behalte jedoch immer im Hinterkopf: Dank dem Büpf hinterlässt Du dennoch Metadaten. Der Nachrichtendienst kann auf diese zugreifen.</div> </div>";
+      } else {
+          echo "<div class=\"panel panel-danger\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Du wirst überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite $domain wird in $ausgabe gehostet. Beim Aufrufen von $domain findet grenzüberschreitende Kommunikation statt. Dabei wirst Du überwacht!</div> </div>";
+      }
+
     }
     ?>
 
@@ -62,7 +68,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="text-muted"><a href="https://github.com/mritzmann/NDG-traffic-surveillance"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></p>
+      <p class="text-muted"><a href="https://github.com/mritzmann/NDG-traffic-surveillance"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> | Ein Projekt von <a href="https://twitter.com/RitzmannMarkus">@RitzmannMarkus</a>, inspiriert von <a href="https://twitter.com/schulerswiss/status/767699766763462656">@schulerswiss</a></p>
     </div>
   </footer>
 
