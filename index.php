@@ -38,6 +38,12 @@
   <title>Prüfe, ob Du beim Besuch Deiner Lieblingswebsite überwacht wirst</title>
   <meta name="description" content="Finde heraus ob du beim besuchen deiner lieblings Webseiten überwacht wirst.">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ueberwacht_ch" />
+  <meta name="twitter:title" content="Prüfe, ob Du beim Besuch Deiner Lieblingswebsite überwacht wirst" />
+  <meta name="twitter:description" content="Wirst du beim Besuch deiner Lieblingswebsite überwacht? Hiermit kannst du es Prüfen." />
+
   <!-- CSS-->
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
