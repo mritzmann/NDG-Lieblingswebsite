@@ -41,8 +41,9 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ueberwacht_ch" />
-  <meta name="twitter:title" content="Prüfe, ob Du beim Besuch Deiner Lieblingswebsite überwacht wirst" />
-  <meta name="twitter:description" content="Wirst du beim Besuch deiner Lieblingswebsite überwacht? Hiermit kannst du es Prüfen." />
+  <meta name="twitter:title" content="Wirst Du überwacht?" />
+  <meta name="twitter:description" content="Wirst du beim Besuch deiner Lieblingswebsite überwacht? Hiermit findest du es heraus." />
+  <meta name="twitter:image" content="https://ueberwacht.ch/img/twitter_image.jpg" />
 
   <!-- CSS-->
   <link href="css/bootstrap.css" rel="stylesheet">
