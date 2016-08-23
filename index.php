@@ -67,9 +67,8 @@
       if ($ausgabe == 'Switzerland') {
           echo "<div class=\"panel panel-warning\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Glückwunsch, du wirst nicht überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite $domain wird in $ausgabe gehostet. Der Nachrichtendienst kann den Inhalt der Kommunikation nicht mitschneiden. Behalte jedoch immer im Hinterkopf: Dank dem Büpf hinterlässt Du dennoch Metadaten. Der Nachrichtendienst kann auf diese zugreifen.</div> </div>";
       } else {
-          echo "<div class=\"panel panel-danger\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Du wirst überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite $domain wird in $ausgabe gehostet. Beim Aufrufen von $domain findet grenzüberschreitende Kommunikation statt. Dabei wirst Du überwacht!</div> </div>";
+          echo "<div class=\"panel panel-danger\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Du wirst überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite $domain wird in $ausgabe gehostet. Beim Aufrufen von $domain findet grenzüberschreitende Kommunikation statt. Dabei wirst Du überwacht!</div> </div> <div class=\"panel panel-default\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Teile Dein Ergebnis</h3> </div> <div class=\"panel-body\">Teile Dein Ergebnis! Du hilfst damit, andere auf diesen Missstand aufmerksam zu machen.<hr><button type=\"button\" class=\"btn btn-default\"><i class=\"fa fa-twitter\"></i> Twitter</button> <button type=\"button\" class=\"btn btn-default\"><i class=\"fa fa-facebook\"></i> Facebook</button> <button type=\"button\" class=\"btn btn-default\"><i class=\"fa fa-envelope\"></i> E-Mail</button></div> </div>";
       }
-
     }
     ?>
 
