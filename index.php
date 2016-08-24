@@ -10,7 +10,7 @@
     $domain = preg_replace('#^https?://#', '', $domain);
     // Taetigt API abfrage und speichert resultat in eine variable.
     // Die API ermoeglicht 150 anfragen pro Minute.
-    $json = file_get_contents('http://ip-api.com/json/'.$domain.'?fields=country');
+    $json = file_get_contents('http://ip-api.com/json/'.$domain.'?fields=country&lang=de');
   }
 
   // keine ahnung was da genau passiert...
