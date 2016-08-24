@@ -6,6 +6,8 @@
   if( empty($_POST) ) {
     // tut nix
   } else {
+    // entfernt http und https aus der eingabe
+    $domain = preg_replace('#^https?://#', '', $domain);
     // Taetigt API abfrage und speichert resultat in eine variable.
     // Die API ermoeglicht 150 anfragen pro Minute.
     $json = file_get_contents('http://ip-api.com/json/'.$domain.'?fields=country');
