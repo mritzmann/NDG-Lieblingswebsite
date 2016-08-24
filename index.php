@@ -2,6 +2,9 @@
   // Nimmt eingabe entgegen und speichert in eine variable.
   $domain = $_POST["eingabe"];
 
+  // Bereinige Eingabe
+  $domain = htmlspecialchars($domain, ENT_QUOTES,'UTF-8', true);
+
   // workaround damit api abfrage nur dann gemacht wird, wenn formular abgesendet wurde.
   if( empty($_POST) ) {
     // tut nix
