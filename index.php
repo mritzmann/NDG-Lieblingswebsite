@@ -47,6 +47,13 @@
   <meta name="twitter:description" content="Wirst du beim Besuch deiner Lieblingswebsite überwacht? Hiermit findest du es heraus." />
   <meta name="twitter:image" content="https://ueberwacht.ch/img/twitter_image.jpg" />
 
+  <!-- Open Graph: Wird von Facebook benutzt -->
+  <meta property="og:url" content="<?php echo $url ?>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wirst Du überwacht?" />
+  <meta property="og:description" content="Wirst du beim Besuch deiner Lieblingswebsite überwacht? Hiermit findest du es heraus." />
+  <meta property="og:image" content="https://ueberwacht.ch/img/twitter_image.jpg" />
+
   <!-- CSS-->
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
