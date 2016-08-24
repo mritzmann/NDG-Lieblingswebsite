@@ -1,0 +1,21 @@
+/*!
+ *  Custom CSS
+ */
+ /* -------------------------- */
+
+p {
+   text-align: justify;
+}
+
+#resultat ul {
+   margin-top: 10px;
+}
+
+h3 .glyphicon {
+  font-size: 80%;
+  padding-right: 10px;
+}
+
+.glyphicon-heart {
+  color: #F00;
+}
