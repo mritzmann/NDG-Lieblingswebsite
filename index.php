@@ -56,8 +56,8 @@
     <div class="page-header">
       <h1>Prüfe, ob Du beim Besuch Deiner Lieblingswebsite überwacht wirst</h1>
     </div>
-    <p>Am 25. September 2016 dürfen wir über das neue Nachrichtendienst (kurz NDG) abstimmen. Mit dem neuen Gesetzt wird die sogenannte Kabelaufklärung eingeführt.</p>
-    <p><b>Die Kabelaufklärung ermöglicht dem Nachrichtendienst, grenzüberschreitende Kommunikation zu überwachen.</b> Es reicht, wenn ein Teilnehmer der Verbindung (also meistens der Server) im Ausland steht und das ist fast immer der Fall. <b>Die meisten (vielleicht sogar alle) Deiner Lieblingswebsites werden im Ausland gehostet.</b> Nachfolgend kannst Du prüfen, ob das stimmt.</p>
+    <p>Am 25. September 2016 dürfen wir über das neue Nachrichtendienstgesetz (kurz NDG) abstimmen. Mit dem neuen Gesetz wird die sogenannte Kabelaufklärung eingeführt.</p>
+    <p><b>Die Kabelaufklärung ermöglicht dem Nachrichtendienst, grenzüberschreitende Kommunikation zu überwachen.</b> Es reicht, wenn ein Teilnehmer der Verbindung (also meistens der Server) im Ausland steht, und das ist fast immer der Fall. <b>Die meisten (vielleicht sogar alle) Deiner Lieblingswebsites werden im Ausland gehostet.</b> Nachfolgend kannst Du prüfen, ob das stimmt.</p>
 
     <hr>
 
@@ -65,18 +65,18 @@
       <div class="form-group">
       <input class="form-control" id="eingabe" name="eingabe" placeholder="<?php echo $placeholder ?>">
       </div>
-      <button type="submit" class="btn btn-default"><i class="fa fa-paper-plane"></i> Website Testen</button>
+      <button type="submit" class="btn btn-default"><i class="fa fa-paper-plane"></i> Website testen</button>
     </form>
 
     <hr>
 
     <?php
     if( empty($ausgabe) ) {
-      echo "<div class=\"panel panel-default\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Technische Umsetzung</h3> </div> <div class=\"panel-body\">Diese Webseite prüft anhand einer Geo-IP API in welchem Land die zu prüfende Webseite steht. Das Resultat wird Dir direkt mitgeteilt.</div> </div>";
+      echo "<div class=\"panel panel-default\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Technische Umsetzung</h3> </div> <div class=\"panel-body\">Diese Webseite prüft anhand einer Geo-IP API, in welchem Land die zu prüfende Webseite steht. Das Resultat wird Dir direkt mitgeteilt.</div> </div>";
     } else {
 
       if ($ausgabe == 'Switzerland') {
-          echo "<div class=\"panel panel-warning\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Glückwunsch, du wirst vielleicht nicht überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite $domain wird in $ausgabe gehostet. Es besteht die möglichkeit, dass der Nachrichtendienst den Inhalt der Kommunikation nicht mitschneiden darf.</br></br>Behalte jedoch immer im Hinterkopf: Dank dem Büpf hinterlässt Du dennoch Metadaten. Der Nachrichtendienst kann auf diese zugreifen. Zudem besteht die Möglichkeit, dass die Route ins Ausland und anschliessend wieder zurück in die Schweiz führt.</div> </div>";
+          echo "<div class=\"panel panel-warning\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Glückwunsch, du wirst vielleicht nicht überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite $domain wird in $ausgabe gehostet. Es besteht die Möglichkeit, dass der Nachrichtendienst den Inhalt der Kommunikation nicht mitschneiden darf.</br></br>Behalte jedoch immer im Hinterkopf: Dank dem Überwachungsgesetz BÜPF hinterlässt Du dennoch Metadaten. Der Nachrichtendienst kann auf diese zugreifen. Zudem besteht die Möglichkeit, dass die Route ins Ausland und anschliessend wieder zurück in die Schweiz führt.</div> </div>";
       } else {
           echo "<div class=\"panel panel-danger\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Du wirst überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite $domain wird in $ausgabe gehostet. Beim Aufrufen von $domain findet grenzüberschreitende Kommunikation statt. Dabei wirst Du überwacht!</br></br>Weitere Informationen:</br><ul><li><a href=\"https://www.nachrichtendienstgesetz.ch/\" target=\"_blank\">5 Gründe gegen den Ausbau der Überwachung</a></li><li><a href=\"http://schnueffelstaat.ch/\" target=\"_blank\">Referendumskomitee: NEIN zum Schnüffelstaat</a></li><li><a href=\"https://www.nachrichtendienstgesetz.com/\" target=\"_blank\">Abhörsystem Codename ISCO</a></li></ul></div> </div> <div class=\"panel panel-default\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\">Teile Dein Ergebnis</h3> </div> <div class=\"panel-body\">Teile Dein Ergebnis! Du hilfst damit, andere auf diesen Missstand aufmerksam zu machen.<hr><a type=\"button\" href=\"https://twitter.com/intent/tweet?url=$url&text=Meine%20Lieblingswebsite%20wird%20%C3%BCberwacht.%20Und%20deine%3F%20Finde%20es%20heraus%3A&original_referer=&via=ueberwacht_ch&hashtags=NDGNein%2C\" class=\"btn btn-default\"><i class=\"fa fa-twitter\"></i> Twitter</a> <a type=\"button\" href=\"https://www.facebook.com/sharer/sharer.php?u=$url\" class=\"btn btn-default\"><i class=\"fa fa-facebook\"></i> Facebook</a> <a type=\"button\" href=\"mailto:?&subject=Prüfe ob Du beim Besuch Deiner Lieblingswebsite überwacht wirst&body=Die%20sogenannte%20Kabelaufkl%C3%A4rung%20erm%C3%B6glicht%20es%2C%20dem%20Nachrichtendienst%20grenz%C3%BCberschreitende%20Kommunikation%20zu%20%C3%BCberwachen.%20Die%20Bef%C3%BCrworter%20behaupten%2C%20dass%20Schweizer%20somit%20nicht%20von%20der%20Massen%C3%BCberwachung%20betroffen%20seien.%20Doch%20das%20stimmt%20nicht%20ganz%3A%20Die%20meisten%20(vielleicht%20sogar%20alle)%20Deiner%20Lieblingswebsites%20werden%20im%20Ausland%20gehostet.%20Nachfolgend%20kannst%20Du%20pr%C3%BCfen%2C%20ob%20das%20stimmt.%0A%0A$url\" class=\"btn btn-default\"><i class=\"fa fa-envelope\"></i> E-Mail</a></div> </div>";
       }
