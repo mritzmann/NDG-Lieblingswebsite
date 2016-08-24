@@ -52,7 +52,10 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Wirst Du überwacht?" />
   <meta property="og:description" content="Wirst du beim Besuch deiner Lieblingswebsite überwacht? Hiermit findest du es heraus." />
-  <meta property="og:image" content="https://ueberwacht.ch/img/twitter_image.jpg" />
+  <meta property="og:image:url" content="http://ueberwacht.ch/img/twitter_image.jpg" />
+  <meta property="og:image:secure_url" content="https://ueberwacht.ch/img/twitter_image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:secure_url" content="http://ueberwacht.ch/img/twitter_image.jpg" />
 
   <!-- CSS-->
   <link href="css/bootstrap.css" rel="stylesheet">
