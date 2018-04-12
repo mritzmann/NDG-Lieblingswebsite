@@ -94,24 +94,6 @@
             echo "<div class=\"panel panel-warning\" id=\"resultat\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\"><span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>Glückwunsch, du wirst vielleicht nicht überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite <a href=\"http://$domain\" target=\"_blank\"><b>$domain</b></a> wird in der <b>$ausgabe</b> gehostet. Es besteht die Möglichkeit, dass der Nachrichtendienst den Inhalt der Kommunikation nicht mitschneiden darf.</br></br>Behalte jedoch immer im Hinterkopf: Dank dem Überwachungsgesetz BÜPF hinterlässt Du dennoch Metadaten. Der Nachrichtendienst kann auf diese zugreifen. Zudem besteht die Möglichkeit, dass die Route ins Ausland und anschliessend wieder zurück in die Schweiz führt.</div> </div>";
         } else {
             echo "<div class=\"panel panel-danger\" id=\"resultat\"> <div class=\"panel-heading\"> <h3 class=\"panel-title\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>Du wirst überwacht!</h3> </div> <div class=\"panel-body\">Die Webseite <a href=\"http://$domain\" target=\"_blank\"><b>$domain</b></a> wird in <b>$ausgabe</b> gehostet. Beim Aufrufen von $domain findet grenzüberschreitende Kommunikation statt. Dabei wirst Du überwacht!</br></br>Weitere Informationen:</br><ul><li><a href=\"https://www.nachrichtendienstgesetz.ch/#faq\" target=\"_blank\">5 Gründe gegen den Ausbau der Überwachung</a></li><li><a href=\"http://schnueffelstaat.ch/\" target=\"_blank\">Referendumskomitee: NEIN zum Schnüffelstaat</a></li><li><a href=\"https://www.nachrichtendienstgesetz.com/\" target=\"_blank\">Abhörsystem Codename ISCO</a></li></ul></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 class=\"panel-title\"><span class=\"glyphicon glyphicon-heart\" aria-hidden=\"true\"></span>Teile Dein Ergebnis</h3></div><div class=\"panel-body\">Teile Dein Ergebnis! Du hilfst damit, andere auf diesen Missstand aufmerksam zu machen.<hr><a type=\"button\" href=\"https://twitter.com/intent/tweet?url=$url&text=Meine%20Lieblingswebsite%20wird%20%C3%BCberwacht.%20Und%20deine%3F%20Finde%20es%20heraus%3A&original_referer=&via=ueberwacht_ch&hashtags=NDGNein%2C\" target=\"_blank\" class=\"btn btn-default\"><i class=\"fa fa-twitter\"></i> Twitter</a> <a type=\"button\" href=\"https://www.facebook.com/sharer/sharer.php?u=$url\" target=\"_blank\" class=\"btn btn-default\"><i class=\"fa fa-facebook\"></i> Facebook</a> <a type=\"button\" href=\"mailto:?&subject=Prüfe ob Du beim Besuch Deiner Lieblingswebsite überwacht wirst&body=Die%20sogenannte%20Kabelaufkl%C3%A4rung%20erm%C3%B6glicht%20es%2C%20dem%20Nachrichtendienst%20grenz%C3%BCberschreitende%20Kommunikation%20zu%20%C3%BCberwachen.%20Die%20Bef%C3%BCrworter%20behaupten%2C%20dass%20Schweizer%20somit%20nicht%20von%20der%20Massen%C3%BCberwachung%20betroffen%20seien.%20Doch%20das%20stimmt%20nicht%20ganz%3A%20Die%20meisten%20(vielleicht%20sogar%20alle)%20Deiner%20Lieblingswebsites%20werden%20im%20Ausland%20gehostet.%20Nachfolgend%20kannst%20Du%20pr%C3%BCfen%2C%20ob%20das%20stimmt.%0A%0A$url\" class=\"btn btn-default\"><i class=\"fa fa-envelope\"></i> E-Mail</a></div> </div>";
-            echo '
-          <!-- Piwik -->
-          <script type="text/javascript">
-            var _paq = _paq || [];
-            _paq.push(["setDomains", ["*.ueberwacht.ch"]]);
-            _paq.push([\'trackPageView\']);
-            _paq.push([\'enableLinkTracking\']);
-            (function() {
-              var u="//stat.ueberwacht.ch/";
-              _paq.push([\'setTrackerUrl\', u+\'piwik.php\']);
-              _paq.push([\'setSiteId\', \'1\']);
-              var d=document, g=d.createElement(\'script\'), s=d.getElementsByTagName(\'script\')[0];
-              g.type=\'text/javascript\'; g.async=true; g.defer=true; g.src=u+\'piwik.js\'; s.parentNode.insertBefore(g,s);
-            })();
-          </script>
-          <noscript><p><img src="//stat.ueberwacht.ch/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-          <!-- End Piwik Code -->
-          ';
         }
     }
     ?>
