@@ -1,5 +1,10 @@
-.profile
-.bashrc
-.cloud-locale-test.skip
-.profile
-.bash_logout
+/log/*
+/cnf/tags
+/.zprofile
+/.profile
+/.zsh_history
+/.zshrc
+/.viminfo
+/.zcompdump-*
+/.ssh/*
+/cnf/nginx-*.conf
